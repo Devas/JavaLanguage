@@ -1,5 +1,6 @@
 package localization;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -34,7 +35,8 @@ public class Localization {
         Properties p = System.getProperties();
         p.list(System.out);
         p = new Properties();
-        p.load(new FileInputStream("properties.txt"));
+//        p.load(new FileInputStream("properties.txt"));
+        p.load(new FileInputStream(new File("res/properties.txt")));
         p.storeToXML(new FileOutputStream("properties.txt"), "");
 
     }

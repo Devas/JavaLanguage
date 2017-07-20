@@ -1,4 +1,4 @@
-package multithreading.threadclass;
+package multithreading.thread_class;
 
 class RunnableImpl implements Runnable {
 
